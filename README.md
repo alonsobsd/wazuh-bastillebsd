@@ -72,7 +72,7 @@ if you want to apply template using another private IP address, you can do the f
 ```sh
 # bastille template wazuh alonsobsd/wazuh-bastillebsd --arg server_ip=11.0.0.2
 ```
-When it is done you will see credentials info for connect to wazuh-dashboards via web browser. Keep it to another place
+When it is done you will see credentials info for connect to wazuh-dashboards via web browser.
 
 ```sh
 ################################################ 
@@ -82,5 +82,7 @@ When it is done you will see credentials info for connect to wazuh-dashboards vi
  Password : @hkXudpIp93xbIOvD                          
 ################################################
  ```
+Keep it to another place
+
 ## License
 This project is licensed under the BSD-3-Clause license.
