@@ -9,7 +9,7 @@ Wazuh-bastilleBSD is a [BastilleBSD](https://bastillebsd.org/) template used by 
 Before you can install wazuh using this template you need some initial configurations
 
 #### Create a loopback interface
-We can create it manually
+We can create it add some lines to /etc/rc.conf
 ```sh
 # sysrc cloned_interfaces="lo1"
 # sysrc ifconfig_lo1_name="bastille0"
