@@ -1,5 +1,5 @@
 # wazuh-bastillebsd
-Wazuh-bastilleBSD is a [BastilleBSD](https://bastillebsd.org/) template used by deploy a testing Wazuh single infraestructure on FreeBSD. The principal goals are helps us to fast way install, configure and run wazuh-indexer (opensearch), wazuh-manager, logstash, filebeat and wazuh-dashboards (opensearch-dashboards + wazuh-kibana-app). Take on mind this container as is must be used by testing purpose and it is not recommended for production because it has a minimal configuration for run wazuh.
+Wazuh-bastilleBSD is a [BastilleBSD](https://bastillebsd.org/) template used by deploy a testing [Wazuh](https://wazuh.org/) single infraestructure on [FreeBSD](https://freebsd.org/). The principal goals are helps us to fast way install, configure and run wazuh-indexer (opensearch), wazuh-manager, logstash, filebeat and wazuh-dashboards (opensearch-dashboards + wazuh-kibana-app). Take on mind this container as is must be used by testing purpose and it is not recommended for production because it has a minimal configuration for run wazuh.
 
 ## Requirements
 Before you can install wazuh using this template you need some initial configurations
