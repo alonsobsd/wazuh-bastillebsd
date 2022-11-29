@@ -1,8 +1,8 @@
 # wazuh-bastillebsd
-Wazuh-bastilleBSD is a bastillebsd template used by deploy a testing Wazuh single infraestructure on FreeBSD. The principal goals are helps us to fast way install, configure and run wazuh-indexer (opensearch), wazuh-manager, logstash, filebeat and wazuh-dashboards (opensearch-dashboards + wazuh-kibana-app). Take on mind this container as is must be used by testing and it is not recommended for production because it has a minimal configuration for run wazuh. 
+Wazuh-bastilleBSD is a [BastilleBSD](https://bastillebsd.org/) template used by deploy a testing Wazuh single infraestructure on FreeBSD. The principal goals are helps us to fast way install, configure and run wazuh-indexer (opensearch), wazuh-manager, logstash, filebeat and wazuh-dashboards (opensearch-dashboards + wazuh-kibana-app). Take on mind this container as is must be used by testing purpose and it is not recommended for production because it has a minimal configuration for run wazuh.
 
-## Requeriments
-Before of you can install wazuh using this template you need some initial configuration
+## Requirements
+Before you can install wazuh using this template you need some initial configurations
 
 #### Create a loopback interface
 We can create it manually
@@ -65,5 +65,22 @@ Now apply wazuh template to container
 
 ```sh
 # bastille bootstrap https://github.com/alonsobsd/wazuh-bastillebsd
-# bastille template wazuh wazuh-bastillebsd
+# bastille template wazuh alonsobsd/wazuh-bastillebsd
 ```
+if you want to apply template using another private IP address, you can do the following
+
+```sh
+# bastille template wazuh alonsobsd/wazuh-bastillebsd --arg server_ip=11.0.0.2
+```
+When it is done you will see credentials info for connect to wazuh-dashboards via web browser. Keep it to another place
+
+```sh
+################################################ 
+ Wazuh dashboard admin credentials                
+ Hostname : https://jail-host-ip:5601/app/wazuh   
+ Username : admin                                 
+ Password : @hkXudpIp93xbIOvD                          
+################################################
+ ```
+## License
+This project is licensed under the BSD-3-Clause license.
